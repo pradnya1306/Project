@@ -28,29 +28,34 @@ print()
 driver_name=["Harish","Ramesh","Jayesh","Mahesh"]
 phone_number=['7890653423','6789099867','8912345656','9087654367']
 rating=[6,9,8,7]
+feedback=["good","very good","bad","good"]
+price=[200,145,275,250]
+driver_location=["khed-shivapur","katraj","kopi","pune station"]
 for i in range(len(driver_name)):
     print(i+1,"driver name :",driver_name[i])
     print( " ","phone number:",phone_number[i])
     print(" ","Rating :",rating[i])
+    print(" ","feedback :",feedback[i])
+    print(" ","price :",price[i])
 
 select_rider=int(input("Select your rider : "))
 print()
 
 import random
 km=random.randint(1,60)
-print("your location distance is :",km)
+print("distance between",current_location, "to",dropping_point, "is :",km,"km")
 print()
 
 rate_per_km=[8,10,12,15]
 print("Your total fare is Rs.",km*rate_per_km[select_vehicle-1])
 print()
-print("Time for reach to destination :",km/10,"hr")
+print("Time for reach to :",dropping_point,km/10,"hr")
 print()
 import random
 otp=random.randint(1000,3000)
 print("Your OTP is : ",otp)
 print()
-print("Share it with your driver.")
+otp=int(input("please give your otp :" ))
 print()
 print("Avilable payment mode :")
 payment=["cash","phone pay","ola money wallet"]
@@ -62,4 +67,5 @@ print("Your payment is successfully done.")
 print()
 rating=int(input("Give your rating here :"))
 print()
+feedback=input("please give your feedback :")
 print("Thank you.")
