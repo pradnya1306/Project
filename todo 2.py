@@ -8,7 +8,7 @@ while i<no_of_task:
     task=input("enter your to do task: ")
     status=input("enter task status : ")
     i=i+1
-    my_to_do_task.append(task)
+    my_to_do_task.append(task) #append function is use to add the item end of list
     task_status.append(status)
 
 print("your number of task = ",no_of_task)
@@ -38,7 +38,7 @@ while i<4:
         if option=="delete":
             delete_task=input("which task you want to delete :")
             delete_status=input("enter delete task status :")
-            my_to_do_task.remove(delete_task)
+            my_to_do_task.remove(delete_task) #remove use to remove specific item
             task_status.remove(delete_status)
             print("After delete task your task is :")
             f=0
@@ -62,11 +62,11 @@ while i<4:
                b=b+1
 
         if option=="clear all":
-            my_to_do_task.clear()
+            my_to_do_task.clear()#clear function is used to clear contain of list
             print(my_to_do_task)
 
         if option=="no":
-            break
+            break #break statement breaks the loop
                
     if option1=="no":
         break
